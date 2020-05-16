@@ -1,6 +1,6 @@
 html {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 * {
@@ -9,5 +9,105 @@ html {
 
 body {
     margin: 0;
-    background-color: rgb(252, 249, 244);
+    color: rgb(255, 248, 236);
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(gray, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.survey-header {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgb(105, 105, 105);
+    width: 800px;
+}
+
+.survey-main {
+    background-color: rgb(161, 161, 161);
+    font-size: 20px;
+    width: 700px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+label[id*="label"] {
+    display: block;
+}
+
+input {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+select {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+select:focus {
+    outline: 2px solid black;
+}
+
+[type=text],
+[type=number],
+[type=email] {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+[type=text]:focus, 
+[type=number]:focus,
+[type=email]:focus {
+    outline: 2px solid black;
+}
+
+[type=checkbox], [type=radio] {
+    width: 18px;
+    height: 18px;
+}
+#home-location-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#textarea-label {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 3px;
+}
+
+textarea:focus {
+    outline: 2px solid black;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+button:focus {
+    outline: 2px solid black;
+}
+
+button:active {
+    background-color: gray;
 }

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="survey-form-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Imperial Military Academy Application</title>
 </head>
 <body>
     <header class="survey-header">
         <h1 id="title">Imperial Military Academy Application</h1>
-        <p><em>Stand with the best by joining the Grand Army of the Galactic Empire</em></p>
+        <p id="description"><em>Stand with the best by joining the Grand Army of the Galactic Empire</em></p>
     </header>
 
     <main class="survey-main">
@@ -18,7 +19,7 @@
             <input type="text" name="name" id="name" placeholder="First and last name" required>
 
             <label for="email" id="email-label">Email</label>
-            <input type="text" name="email" id="email" placeholder="Holonet email address" required>
+            <input type="email" name="email" id="email" placeholder="Holonet email address" required>
 
             <label for="age" id="number-label">Age</label>
             <input type="number" name="age" id="number" min="18" max="40" placeholder="Age" required>
@@ -35,38 +36,46 @@
 
             <p>What is your gender?</p>
             <input type="radio" name="gender" id="male" value="male">
-            <label for="male">Male</label>
+            <label for="male" id="radio-male">Male</label> <br>
             <input type="radio" name="gender" id="female" value="female">
-            <label for="female">Female</label>
+            <label for="female" id="radio-female">Female</label> <br>
             <input type="radio" name="gender" id="other" value="other">
-            <label for="other">Other</label>
+            <label for="other" id="radio-other">Other</label>
 
             <p>Which academies would you be interested in enrolling in?</p>
             <input type="checkbox" name="academy1" id="arkanis" value="Arkanis">
-            <label for="academy1">Arkanis Academy</label>
+            <label for="academy1" id="checkbox-academy1">Arkanis Academy</label> <br>
             <input type="checkbox" name="academy2" id="carida" value="Carida">
-            <label for="academy2">Carida Academy</label>
+            <label for="academy2" id="checkbox-academy2">Carida Academy</label> <br>
             <input type="checkbox" name="academy3" id="corellia" value="Corellia">
-            <label for="academy3">Corellia Imperial Training Center</label>
+            <label for="academy3" id="checkbox-academy3">Corellia Imperial Training Center</label> <br>
             <input type="checkbox" name="academy4" id="corulag" value="Corulag">
-            <label for="academy4">Corulag Academy</label>
+            <label for="academy4" id="checkbox-academy4">Corulag Academy</label> <br>
             <input type="checkbox" name="academy5" id="eriadu" value="Eriadu">
-            <label for="academy5">Imperial Academy of Eriadu</label>
+            <label for="academy5" id="checkbox-academy5">Imperial Academy of Eriadu</label> <br>
             <input type="checkbox" name="academy6" id="mandalore" value="Mandalore">
-            <label for="academy6">Imperial Academy of Mandalore</label>
+            <label for="academy6" id="checkbox-academy6">Imperial Academy of Mandalore</label> <br>
             <input type="checkbox" name="academy7" id="uyter" value="Uyter">
-            <label for="academy7">Imperial Academy of Uyter</label>
+            <label for="academy7" id="checkbox-academy7">Imperial Academy of Uyter</label> <br>
             <input type="checkbox" name="academy8" id="myomar" value="Myomar">
-            <label for="academy8">Myomar Academy</label>
+            <label for="academy8" id="checkbox-academy8">Myomar Academy</label> <br>
             <input type="checkbox" name="academy9" id="pretor-flats" value="Pretor-Flats">
-            <label for="academy9">Pretor Flats Academy</label>
+            <label for="academy9" id="checkbox-academy9">Pretor Flats Academy</label> <br>
             <input type="checkbox" name="academy10" id="raithal" value="Raithal">
-            <label for="academy10">Raithal Academy</label>
+            <label for="academy10" id="checkbox-academy10">Raithal Academy</label> <br>
             <input type="checkbox" name="academy11" id="skystrike" value="Skystrike">
-            <label for="academy11">Skystrike Academy</label>
+            <label for="academy11" id="checkbox-academy11">Skystrike Academy</label> <br>
 
-            <label for="comments">Any additional comments?</label>
-            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            <label for="home-location" id="home-location-label">Which area of the galaxy do you currently live in?</label>
+            <select name="home-location" id="home-location" required>
+                <option value="core-worlds">Core Worlds</option>
+                <option value="inner-rim">Inner Rim</option>
+                <option value="mid-rim">Mid Rim</option>
+                <option value="outer-rim">Outer Rim</option>
+            </select>
+
+            <label for="comments" id="textarea-label">Any additional comments?</label> <br>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea> <br>
 
             <button type="submit" id="submit" form="survey-form" value="Submit">Submit application</button>
         </form>
