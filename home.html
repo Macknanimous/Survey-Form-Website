@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="survey-form-style.css">
-    <title>Document</title>
+    <title>Imperial Military Academy Application</title>
 </head>
 <body>
-    <header>
-        <h1 id="title">Imperial Military Application</h1>
+    <header class="survey-header">
+        <h1 id="title">Imperial Military Academy Application</h1>
+        <p><em>Stand with the best by joining the Grand Army of the Galactic Empire</em></p>
     </header>
+
+    <main class="survey-main">
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" placeholder="First and last name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="text" name="email" id="email" placeholder="Holonet email address" required>
+
+            <label for="age" id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="18" max="40" placeholder="Age" required>
+
+            <label for="military-branch" id="dropdown-label">Which branch of the military are you interested in?</label>
+            <select name="military-branch" id="dropdown" required>
+                <option value="army">Imperial Army</option>
+                <option value="marines">Imperial Marines</option>
+                <option value="navy">Imperial Navy</option>
+                <option value="intelligence">Imperial Intelligence</option>
+                <option value="research">Imperial Military Research</option>
+                <option value="special-forces">Imperial Special Forces</option>
+            </select>
+
+            <p>What is your gender?</p>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+
+            <p>Which academies would you be interested in enrolling in?</p>
+            <input type="checkbox" name="academy1" id="arkanis" value="Arkanis">
+            <label for="academy1">Arkanis Academy</label>
+            <input type="checkbox" name="academy2" id="carida" value="Carida">
+            <label for="academy2">Carida Academy</label>
+            <input type="checkbox" name="academy3" id="corellia" value="Corellia">
+            <label for="academy3">Corellia Imperial Training Center</label>
+            <input type="checkbox" name="academy4" id="corulag" value="Corulag">
+            <label for="academy4">Corulag Academy</label>
+            <input type="checkbox" name="academy5" id="eriadu" value="Eriadu">
+            <label for="academy5">Imperial Academy of Eriadu</label>
+            <input type="checkbox" name="academy6" id="mandalore" value="Mandalore">
+            <label for="academy6">Imperial Academy of Mandalore</label>
+            <input type="checkbox" name="academy7" id="uyter" value="Uyter">
+            <label for="academy7">Imperial Academy of Uyter</label>
+            <input type="checkbox" name="academy8" id="myomar" value="Myomar">
+            <label for="academy8">Myomar Academy</label>
+            <input type="checkbox" name="academy9" id="pretor-flats" value="Pretor-Flats">
+            <label for="academy9">Pretor Flats Academy</label>
+            <input type="checkbox" name="academy10" id="raithal" value="Raithal">
+            <label for="academy10">Raithal Academy</label>
+            <input type="checkbox" name="academy11" id="skystrike" value="Skystrike">
+            <label for="academy11">Skystrike Academy</label>
+
+            <label for="comments">Any additional comments?</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+
+            <button type="submit" id="submit" form="survey-form" value="Submit">Submit application</button>
+        </form>
+    </main>
 </body>
 </html>
